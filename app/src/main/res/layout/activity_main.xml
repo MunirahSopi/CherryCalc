@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CherryCalc"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#541e2c"
+        android:textColor="#FFFFFF"
+        android:padding="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Input -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="101dp"
+                    android:layout_height="82dp"
+                    android:layout_marginBottom="12dp"
+                    android:contentDescription="App Logo"
+                    android:src="@drawable/cherrylogoo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CherryCalc"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/investAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Invested Amount (RM)"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/dividendRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Annual Dividend Rate (%)"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/months"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Number of Months (1-12)"
+                android:inputType="number"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/calculateBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate Dividend"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="#541e2c"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/resultMonthly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monthly Dividend: RM 0.00"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/resultTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Dividend: RM 0.00"
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="#541e2c"
+        app:menu="@menu/main_menu"
+        app:itemTextColor="@android:color/white"
+        app:itemIconTint="@android:color/white"/>
+</LinearLayout>

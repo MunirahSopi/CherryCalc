@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#541e2c</item>
+        <item name="colorPrimaryDark">#3b1320</item>
+        <item name="colorAccent">#ff4081</item>
+    </style>
+
+    <!-- Cherry-styled Button -->
+    <style name="CherryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">#541e2c</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>
