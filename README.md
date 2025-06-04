@@ -1,6 +1,6 @@
 # 🍒 CherryCalc - Unit Trust Dividend Calculator
 
-![App Icon](src/main/res/drawable/cherrylogoo.png)
+![App Icon](app/src/main/res/drawable/cherrylogoo.png)
 
 Android app that calculates monthly and total dividends from unit trust investments.
 
