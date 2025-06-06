@@ -40,7 +40,6 @@ public class AboutActivity extends AppCompatActivity {
             return false;
         });
 
-        // Set the about item as selected
         bottomNav.setSelectedItemId(R.id.nav_about);
     }
 }
